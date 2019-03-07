@@ -3,7 +3,7 @@ node {
 	try {
 	
 		stage('Clone'){
-			git clone https://github.com/A4Ayub/DevOpsExams.git/
+			git clone 'https://github.com/A4Ayub/DevOpsExams.git/'
 		}
 
 		stage('Build'){

@@ -11,8 +11,8 @@ node {
 		}
 
 		stage('Push'){
-			docker login --username=a4ayub --email=robert.ayub@gmail.com
-			docker push a4ayub/devopsexams:version_one
+			docker login --username='a4ayub' --email='robert.ayub@gmail.com'
+			docker push 'a4ayub/devopsexams:version_one'
 		}
 	
 		stage('Deploy'){

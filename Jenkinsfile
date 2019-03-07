@@ -11,11 +11,12 @@ node {
 		}
 
 		stage('Push'){
-			
+			docker login --username=a4ayub --email=robert.ayub@gmail.com
+			docker push a4ayub/DevOpsExams
 		}
-
+	
 		stage('Deploy'){
-			
+			docker run DevOpsExams		
 		}
 
 	} catch(){
